@@ -8,10 +8,10 @@ from textblob import TextBlob
 import nodebox_linguistics_extended as nle
 
 print(nle.verb.infinitive('swimming'))
-newsapi = NewsApiClient(api_key='afb1216809004e278263b3a8e9aebd7f')
+newsapi = NewsApiClient(api_key='')
 h = html2text.HTML2Text()
 h.ignore_links = True
-finnhub_client = finnhub.Client(api_key="brb63dnrh5rb7je2ldkg")
+finnhub_client = finnhub.Client(api_key="")
 candles = finnhub_client.stock_candles('MKSI', 'D', int(time.mktime(datetime.strptime('01/06/2021', "%m/%d/%Y").timetuple())), int(time.mktime(datetime.strptime('02/06/2021', "%m/%d/%Y").timetuple())))
 print(candles)
 dates = candles['t']
